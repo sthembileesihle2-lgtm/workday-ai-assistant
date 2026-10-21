@@ -49,7 +49,7 @@ function Planner() {
       const j = i + d;
       if (j < 0 || j >= t.length) return t;
       const c = [...t];
-      [c[i], c[j]] = [c[j], c[i]];
+      const a = c[i]!; c[i] = c[j]!; c[j] = a;
       return c;
     });
 

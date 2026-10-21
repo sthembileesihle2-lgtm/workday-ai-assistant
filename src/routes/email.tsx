@@ -45,7 +45,7 @@ function EmailPage() {
       if (r.error) setError(r.error);
       else if (r.text) {
         setOut(r.text);
-        addRecent({ type: "email", title: r.text.split("\n")[0].replace(/^Subject:\s*/i, "") || "Email", content: r.text });
+        addRecent({ type: "email", title: (r.text.split("\n")[0] ?? "").replace(/^Subject:\s*/i, "") || "Email", content: r.text });
       }
     } catch {
       setError("Network error — could not reach the AI service. Please try again.");
