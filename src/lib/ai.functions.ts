@@ -21,7 +21,7 @@ const Input = z.object({
 export const generateAI = createServerFn({ method: "POST" })
   .inputValidator((d: unknown) => Input.parse(d))
   .handler(async ({ data }): Promise<{ text?: string; error?: string; status?: number }> => {
-    const key = process.env.LOVABLE_API_KEY;
+    const key = process.env['LOVABLE_API_KEY'];
     if (!key) return { error: "AI is not configured: LOVABLE_API_KEY is missing.", status: 401 };
 
     const res = await fetch("https://ai.gateway.lovable.dev/v1/responses", {
