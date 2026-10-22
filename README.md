@@ -1,40 +1,129 @@
-# Workday AI Assistant
+# AI Workplace Productivity Assistant
 
-Build a modern, responsive SaaS web app called AI Workplace Productivity Assistant using React, with a clean white and light-pink colour palette, pink accents, rounded cards, and a professional dashboard.
+An AI-powered web application that helps professionals automate everyday workplace tasks such as writing emails, planning schedules, and getting quick workplace support, all in one clean dashboard.
 
-Include a sidebar with Dashboard, Smart Email Generator, AI Task Planner, AI Chatbot, and Settings.
+---
 
-Email Generator: Generate personalised, professional emails from user instructions, with Formal, Friendly, and Persuasive tones. Allow users to edit and copy results.
+## Project Overview
 
-Task Planner: Generate practical daily or weekly schedules from user tasks, deadlines, and priorities. Allow editing and prioritisation.
+The AI Workplace Productivity Assistant is a modern, responsive SaaS-style web application designed to save professionals time. It brings together three AI-powered tools in a single dashboard with sidebar navigation and a clean light pink and white interface.
 
-AI Chatbot: Provide an interactive workplace assistant that responds intelligently to user prompts about productivity, communication, planning, and workplace problem-solving.
+- Generates professional emails in different tones.
+- Creates prioritised daily or weekly schedules.
+- Provides an interactive AI chatbot for workplace questions.
+- Runs fully in the browser with no custom backend.
 
-Dashboard: Display welcome message, quick-action cards, and recent outputs.
+---
+## Live Demo
 
-AI functionality: Use Lovable's available AI integration to generate contextual, genuinely AI-written responses based on user input, not hardcoded or generic templates. If no AI integration is configured, show clear setup instructions rather than fake AI responses.
+The application is published and can be accessed here:
 
-Constraints: Frontend only; no custom backend, database, authentication, or server. Use localStorage for optional saving. Ensure responsive mobile design, editable outputs, copy buttons, loading states, error handling, and a responsible AI disclaimer reminding users to verify AI-generated content and avoid entering confidential workplace information.
+🔗 [AI Workplace Productivity Assistant](https://workday-wordsmith-planner.lovable.app)
 
-Make all navigation and features functional. Prioritise a polished, usable MVP and avoid unnecessary features.
+## Features Implemented
 
-This project was built with [Lovable](https://lovable.dev).
+### Smart Email Generator
 
-## Build with Lovable
+- Generates professional emails from structured inputs.
+- Supports multiple tones: Formal, Friendly, and Persuasive.
+- Allows users to edit the generated email before using it.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4b638370-cc0e-4a84-8ec2-4165a24ed7c9).
+### AI Task Planner
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- Generates daily or weekly schedules from a list of tasks.
+- Prioritises tasks based on urgency and importance.
+- Allows users to edit the generated plan.
 
-## Development
+### AI Chatbot Interface
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+- Interactive workplace assistant in a chat-style layout.
+- Responds to user prompts with AI-generated answers.
+- Helps with workplace advice, brainstorming, and writing support.
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+### Dashboard and Design
+
+- Modern dashboard with sidebar navigation.
+- Fully responsive layout for desktop, tablet, and mobile.
+- Clean, professional light pink, pink, and white theme.
+- Structured AI prompts to produce relevant, non-generic responses.
+- Editable AI outputs across all tools.
+
+---
+
+## Responsible AI
+
+- Includes a responsible AI disclaimer.
+- Reminds users to review AI-generated information before using it professionally.
+- Designed to support users rather than replace professional judgement.
+
+---
+
+## Technologies and Tools Used
+
+- **React** – Frontend application framework
+- **TypeScript** – Type-safe application development
+- **Vite** – Development server and build tool
+- **Tailwind CSS** – Responsive styling and UI design
+- **AI API** – AI-generated workplace responses
+- **Lucide Icons** – Interface icons
+- **Git & GitHub** – Version control and project hosting
+- **Lovable** – Application development and prototyping
+
+---
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Account35/ai-productivity-hub.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd ai-productivity-hub
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Development Server
+
+```bash
 npm run dev
 ```
+
+### 5. Open the Application
+
+Open your browser and go to the local address shown in the terminal, usually:
+
+```
+http://localhost:8080
+```
+
+### 6. Build for Production (Optional)
+
+```bash
+npm run build
+```
+
+---
+
+## Usage
+
+1. Select a tool from the sidebar: Email Generator, Task Planner, or Chatbot.
+2. Fill in the form fields or type your prompt.
+3. Click **Generate** to get the AI response.
+4. Edit the output if needed and copy it for use.
+
+---
+
+## Limitations
+
+- No backend, so there are no user accounts or saved history between sessions.
+- AI response quality depends on the detail provided in the prompt.
+- Built using a free Lovable plan with limited credits.
