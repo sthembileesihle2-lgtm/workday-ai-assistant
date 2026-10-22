@@ -127,3 +127,8 @@ npm run build
 - No backend, so there are no user accounts or saved history between sessions.
 - AI response quality depends on the detail provided in the prompt.
 - Built using a free Lovable plan with limited credits.
+
+---
+## Author
+
+Sthembile Mbatha
